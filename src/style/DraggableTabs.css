@@ -1,0 +1,94 @@
+.Container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.Toolbar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+
+.WhiteSheet {
+    overflow: scroll;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.TabItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+    background-color: lightgray;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    z-index: 10;
+    white-space: nowrap;
+}
+
+.ArrowsLayer {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.ArrowsLayer line,
+.ArrowsLayer circle {
+    pointer-events: auto;
+}
+
+.AttachmentPoint {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: grey;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.Modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.ModalContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+}
+
+.Close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}

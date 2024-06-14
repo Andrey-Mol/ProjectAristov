@@ -1,0 +1,112 @@
+/* index.css */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.TabBar {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 0.5rem;
+    background: #f0f0f0;
+    border-top: 1px solid #ccc;
+}
+
+.TabButton {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+.TabButton:hover {
+     background: #f9f9f9;
+ }
+.TabButton.active {
+background: #e0e0e0;
+font-weight: bold;
+}
+
+.AddTabButton {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+.AddTabButton:hover {
+    background: #f9f9f9;
+}
+.Nav {
+    display: flex;
+    justify-content: space-around;
+    background: #333;
+    padding: 1rem;
+}
+
+.NavLink {
+    color: #fff;
+    text-decoration: none;
+}
+.NavLink:hover {
+     text-decoration: underline;
+ }
+
+.DragDrop {
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    height: 100vh; /* Высота контейнера для центрирования по вертикали */
+}
+
+.HorizontalList {
+    display: flex; /* Установка flex-контейнера для горизонтального расположения */
+}
+
+.TabItemDrag {
+    margin: 0 10px; /* Отступы между элементами */
+    padding: 10px 20px; /* Внутренние отступы для табов */
+    border: 1px solid #ccc; /* Рамка для табов */
+    background: #fff; /* Фон для табов */
+    cursor: pointer; /* Курсор указателя при наведении */
+}
+
+.Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Цвет фона страницы */
+}
+
+.WhiteSheet {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    background-color: #ffffff; /* Белый фон для листа */
+    border: 1px solid #ccc; /* Рамка для листа */
+    overflow: hidden;
+}
+
+.TabItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #e0e0e0; /* Цвет фона вкладки */
+    border: 1px solid #ccc; /* Рамка для вкладки */
+    cursor: move; /* Курсор при перетаскивании */
+}
+.TabItem:hover {
+     background: #f9f9f9;
+ }
